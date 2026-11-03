@@ -9,6 +9,9 @@ Tarih: 30 Ekim 2026. Bu daldaki dosyalar AES-256 ile şifrelidir; şifre yalnız
 
 Dışarıda bırakılanlar (yeniden üretilebilir): render ara dosyaları (seg*.mp4, kontrol kareleri), 3D render kareleri, Kokoro ses modeli ve konuşma tanıma modeli (GitHub'dan yeniden indirilir: thewh1teagle/kokoro-onnx model-files-v1.0, k2-fsa/sherpa-onnx asr-models).
 
+## Proje klasörü (3 Kasım 2026)
+- **proje_klasoru** (~314 MB, 4 parça): düzenli proje klasörü (kanal rehberi, bölümler, motor kodu, sesler, analiz, sohbet geçmişi). Açmak: `cat proje_klasoru.zip.enc.part* | openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -pass pass:'ŞİFRE' > proje.zip && unzip proje.zip`
+
 ## Geri yükleme
 ```bash
 git clone --branch yedek --depth 1 https://github.com/efsanebal1903/whatifwatch-media yedek && cd yedek
